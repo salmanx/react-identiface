@@ -1,12 +1,44 @@
 {
-  "name": "react-hash-avatar",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "react-identiface",
+  "version": "0.1.0",
+  "description": "Github style deterministic avatar generator using unique identifiers for React application . SVG format, SSR-safe, zero runtime deps.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --sourcemap",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "avatar",
+    "identicon",
+    "gravatar",
+    "blockies",
+    "identigrid",
+    "svg",
+    "react",
+    "nextjs",
+    "ssr"
+  ],
+  "license": "MIT"
 }
