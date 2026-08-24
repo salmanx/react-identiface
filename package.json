@@ -1,7 +1,7 @@
 {
   "name": "react-identiface",
   "version": "0.1.0",
-  "description": "Github style deterministic avatar generator using unique identifiers for React application . SVG format, SSR-safe, zero runtime deps.",
+  "description": "Github style deterministic avatar generator using unique identifier for React application . SVG format, SSR-safe, zero runtime deps.",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
