@@ -2,6 +2,14 @@
 
 Github style deterministic avatar generator using unique identifier for React application . SVG format, SSR-safe, zero runtime deps.
 
+## Install
+
+```tsx
+npm i react-identiface
+```
+
+## Quick start
+
 ```tsx
 import { Identiface } from "react-identiface";
 
